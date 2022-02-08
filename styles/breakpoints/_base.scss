@@ -1,0 +1,146 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+基本的なスタイルはこのファイルに記述する
+
+******************************************************************/
+
+html {
+  scroll-behavior: smooth; // ページ内リンククリックの際にスムーズにスクロールさせる
+}
+
+body {
+  font-family: "Kameron", "Noto Sans JP", sans-serif;
+  color: $cFontBasic1;
+}
+
+// 全体の幅の最大値を設定する
+.global-max-width {
+  width: 90%; // 左右5%づつは開ける
+  max-width: $contentMaxWidth;
+  margin: 0 auto; // 中央寄せ
+}
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+.mb-lg {
+  margin-bottom: 40px !important;
+}
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+.pb-lg {
+  padding-bottom: 40px !important;
+}
+
+.logo {
+  color: $cFontBasic1;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+
+  &__icon {
+    color: $cLogo;
+    font-size: 26px;
+    padding-right: 0.15em;
+  }
+}
+
+.main-title {
+  font-size: 24px;
+  display: block;
+}
+
+.sub-title {
+  font-size: 16px;
+  opacity: 0.8; // 半透明
+}
+
+#global-container {
+  background-color: $cGlobalColor;
+}
+
+#container {
+  transition: all $menuOpenTime;
+  position: relative;
+  z-index: 50;
+
+  &.menu-open {
+    transform: translateX(-$mobileMenuWidth);
+
+    & .header {
+      background-color: transparent;
+    }
+
+    & .mobile-menu__cover {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+#content {
+  @extend .global-max-width;
+  background-color: $cContentColor;
+}
+
+.hero {
+  @extend .mb-lg;
+  padding-top: $headerHeight;
+}
+
+section {
+  @extend .mb-lg;
+  background-color: $cSectionColor;
+}
+
+.section-title {
+  @extend .mb-sm;
+  color: $cLinkColor;
+  font-size: 28px;
+  text-align: center;
+  font-style: italic;
+
+  // border-bottom: 1px dashed rgba($cLinkColor, 0.2);
+}
+
+.contact {
+  &__msg {
+    text-align: center;
+    @extend .mb-sm;
+  }
+  &__mail {
+    text-align: center;
+  }
+}
+
+.to-top {
+  &__msg {
+    text-align: center;
+    // box-shadow: 1px 1px 3px 0px rgba(128, 128, 128, 0.15);
+    // background-color: rgb(245, 245, 250);
+  }
+}
+
+.footer {
+  @extend .global-max-width;
+
+  background-color: rgba($color: $cFooterColor, $alpha: 0.6);
+  height: $footerHeight;
+
+  &__inner {
+    height: 100%;
+    margin-left: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & small {
+      font-size: 12px;
+      opacity: 0.5;
+    }
+  }
+}

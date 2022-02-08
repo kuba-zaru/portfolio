@@ -1,0 +1,83 @@
+/******************************************************************
+
+Stylesheet: 600px
+
+******************************************************************/
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+.header {
+  .header-menu {
+    // PC用のメニューを表示する
+    visibility: visible;
+    display: block;
+  }
+}
+
+.mobile-menu {
+  // モバイル用のメニュー、ボタンは非表示とする
+  visibility: hidden;
+  display: none;
+  &__button {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.hero {
+  &__main-title {
+    font-size: 42px;
+  }
+}
+
+.swiper-slide {
+  height: 300px; // 画像の高さ
+}
+
+.swiper-button-white {
+  opacity: 0.2;
+}
+
+.accordion-1 {
+  &__inner {
+    // 横に並べる
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 49%;
+  }
+
+  &__footer {
+    font-size: 28px;
+  }
+}
+
+.about {
+  &__inner {
+    padding-left: 0;
+  }
+
+  &__img-wrap {
+    width: 35%;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+  &__item-wrap {
+    width: 65%;
+  }
+}

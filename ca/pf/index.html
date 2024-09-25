@@ -8,12 +8,15 @@
   <meta name="description" content="Fictitious creator site">
   <meta name="robots" content="noindex,nofollow">
   <meta name="format-detection" content="telephone=no">
-  <title>White Stone | Fictional Creator</title>
+  <title>Portfolio | Kuba Takayuki</title>
   <!--icon-->
   <link rel="apple-touch-icon" href="img/white-stone-logo.png">
   <link rel="icon" sizes="256x256" href="img/white-stone-logo.png">
   <!--Googlefont-->
-  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
   <!--fontawesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <!--layout css-->
@@ -24,67 +27,6 @@
   <link rel="stylesheet" href="css/inview.css">
   <!--jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!--fancybox js-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
-  <!--fancybox code-->
-  <script>
-    $(function () {
-      $('[data-fancybox="woman"]').fancybox({
-        loop: true,
-        transitionEffect: "circular",
-        animationEffect: "rotate"
-      });
-      $('[data-fancybox="gra"]').fancybox({
-        loop: true,
-        transitionEffect: "rotate",
-        animationEffect: "rotate"
-      });
-      $('[data-fancybox="youtube"]').fancybox({
-        loop: true
-      });
-      $('[data-fancybox="map"]').fancybox({
-        animationEffect: "zoom-in-out"
-      });
-      $('[data-fancybox="web"]').fancybox({
-        loop: true,
-        animationEffect: "fade"
-      });
-      $('[data-fancybox="profile"]').fancybox({
-        loop: true,
-        animationEffect: "fade"
-      });
-    });
-  </script>
-  <!--smoothscroll-->
-  <script src="js/SmoothScroll.js"></script>
-  <!--nav highlight-->
-  <script>
-    $(function () {
-      $(window).scroll(function () {
-        for (var i = 1; i <= 7; i++) {
-          if ($("section:nth-of-type(" + i + ")").offset().top < $(window).scrollTop() + 100) {
-            $(".gNav li").removeClass("current");
-            $(".gNav li:nth-of-type(" + i + ")").addClass("current");
-          }
-        }
-      });
-    });
-  </script>
-  <!--inview js-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"
-    integrity="sha512-D68mBFX2aQwVh2wV6uCDLmabIveaSQL3uVUo2Ze7VwxIeOcAd4C1/JagkVoObb/NLkYDrdvY3JHK1KOfenHVcA=="
-    crossorigin="anonymous"></script>
-  <!--inview setup js-->
-  <script src="js/inview_set.js"></script>
-  <!--setTimeout-->
-  <script>
-    $(function () {
-      $("body").css({ opacity: '0' });
-      setTimeout(function () {
-        $("body").stop().animate({ opacity: '1' }, 2000);
-      }, 1000);
-    });
-  </script>
   <style>
     #particles-js {
       position: absolute;
@@ -103,85 +45,29 @@
     <!--header-bg-->
     <section class="header-bg">
       <header class="header up">
-        <h1>White&nbsp;Stone<br><span>Fictional&nbsp;Creator</span></h1>
-        <p class="topBack"><a href="#photography"><i class="fas fa-angle-double-down"></i></a></p>
+        <h1>Portfolio<br><span>Kuba&nbsp;Takayuki</span></h1>
+        <p class="topBack"><a href="#g-design"><i class="fas fa-angle-double-down"></i></a></p>
       </header>
     </section>
     <!--nav-->
     <nav class="gNav">
       <ul>
         <li><a href="#">Top</a></li>
-        <li><a href="#photography">Photo</a></li>
         <li><a href="#g-design">Graphic</a></li>
+        <li><a href="#banner">Banner</a></li>
         <li><a href="#web">Web</a></li>
         <li><a href="#movie">Movie</a></li>
         <li><a href="#profile">Profile</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <!--photography-->
-    <section id="photography" class="section-box">
-      <h2 class="up">Photography</h2>
-      <div class="photo">
-        <ul class="img-box woman-a up">
-          <li>
-            <a href="img/photo/A-01-min.jpg" data-fancybox="woman" data-caption="Woman A-01"><img
-                src="img/photo/A-01_thumb.jpg" alt="a-01"></a>
-          </li>
-          <li>
-            <a href="img/photo/A-02-min.jpg" data-fancybox="woman" data-caption="Woman A-02"><img
-                src="img/photo/A-02_thumb.jpg" alt="a-02"></a>
-          </li>
-          <li>
-            <a href="img/photo/B-01-min.jpg" data-fancybox="woman" data-caption="Woman B-01"><img
-                src="img/photo/B-01_thumb.jpg" alt="b-01"></a>
-          </li>
-          <li>
-            <a href="img/photo/B-02-min.jpg" data-fancybox="woman" data-caption="Woman B-02"><img
-                src="img/photo/B-02_thumb.jpg" alt="b-02"></a>
-          </li>
-          <li>
-            <a href="img/photo/C-01-min.jpg" data-fancybox="woman" data-caption="Woman C-01"><img
-                src="img/photo/C-01_thumb.jpg" alt="c-01"></a>
-          </li>
-          <li>
-            <a href="img/photo/C-02-min.jpg" data-fancybox="woman" data-caption="Woman C-02"><img
-                src="img/photo/C-02_thumb.jpg" alt="c-02"></a>
-          </li>
-          <li>
-            <a href="img/photo/D-01-min.jpg" data-fancybox="woman" data-caption="Woman D-01"><img
-                src="img/photo/D-01_thumb.jpg" alt="d-01"></a>
-          </li>
-          <li>
-            <a href="img/photo/D-02-min.jpg" data-fancybox="woman" data-caption="Woman D-02"><img
-                src="img/photo/D-02_thumb.jpg" alt="d-02"></a>
-          </li>
-          <li>
-            <a href="img/photo/E-01-min.jpg" data-fancybox="woman" data-caption="Woman E-01"><img
-                src="img/photo/E-01_thumb.jpg" alt="e-01"></a>
-          </li>
-          <li>
-            <a href="img/photo/E-02-min.jpg" data-fancybox="woman" data-caption="Woman E-02"><img
-                src="img/photo/E-02_thumb.jpg" alt="e-02"></a>
-          </li>
-          <li>
-            <a href="img/photo/F-01-min.jpg" data-fancybox="woman" data-caption="Woman F-01"><img
-                src="img/photo/F-01_thumb.jpg" alt="f-03"></a>
-          </li>
-          <li>
-            <a href="img/photo/F-02-min.jpg" data-fancybox="woman" data-caption="Woman F-02"><img
-                src="img/photo/F-02_thumb.jpg" alt="f-04"></a>
-          </li>
-        </ul>
-      </div>
-    </section>
     <!--Graphic-->
     <section id="g-design" class="section-box">
       <h2 class="up">Graphic Design</h2>
       <ul class="img-box up">
         <li>
-          <a href="img/gra/gra_01.jpg" data-fancybox="gra" data-caption="Graphic-01"><img src="img/gra/gra_01_thumb.jpg"
-              alt="Graphic-01"></a>
+          <a href="img/gra/gra_01.jpg" data-fancybox="gra" data-caption="Graphic-01_あいうえおあいうえおあいうえおあいうえおあいうえお"><img
+              src="img/gra/gra_01_thumb.jpg" alt="Graphic-01"></a>
         </li>
         <li>
           <a href="img/gra/gra_02.jpg" data-fancybox="gra" data-caption="Graphic-02"><img src="img/gra/gra_02_thumb.jpg"
@@ -308,6 +194,62 @@
               alt="Graphic-32"></a>
         </li>
       </ul>
+    </section>
+    <!--banner-->
+    <section id="banner" class="section-box">
+      <h2 class="up">banner</h2>
+      <div class="photo">
+        <ul class="img-box woman-a up">
+          <li>
+            <a href="img/photo/A-01-min.jpg" data-fancybox="woman" data-caption="Woman A-01"><img
+                src="img/photo/A-01_thumb.jpg" alt="a-01"></a>
+          </li>
+          <li>
+            <a href="img/photo/A-02-min.jpg" data-fancybox="woman" data-caption="Woman A-02"><img
+                src="img/photo/A-02_thumb.jpg" alt="a-02"></a>
+          </li>
+          <li>
+            <a href="img/photo/B-01-min.jpg" data-fancybox="woman" data-caption="Woman B-01"><img
+                src="img/photo/B-01_thumb.jpg" alt="b-01"></a>
+          </li>
+          <li>
+            <a href="img/photo/B-02-min.jpg" data-fancybox="woman" data-caption="Woman B-02"><img
+                src="img/photo/B-02_thumb.jpg" alt="b-02"></a>
+          </li>
+          <li>
+            <a href="img/photo/C-01-min.jpg" data-fancybox="woman" data-caption="Woman C-01"><img
+                src="img/photo/C-01_thumb.jpg" alt="c-01"></a>
+          </li>
+          <li>
+            <a href="img/photo/C-02-min.jpg" data-fancybox="woman" data-caption="Woman C-02"><img
+                src="img/photo/C-02_thumb.jpg" alt="c-02"></a>
+          </li>
+          <li>
+            <a href="img/photo/D-01-min.jpg" data-fancybox="woman" data-caption="Woman D-01"><img
+                src="img/photo/D-01_thumb.jpg" alt="d-01"></a>
+          </li>
+          <li>
+            <a href="img/photo/D-02-min.jpg" data-fancybox="woman" data-caption="Woman D-02"><img
+                src="img/photo/D-02_thumb.jpg" alt="d-02"></a>
+          </li>
+          <li>
+            <a href="img/photo/E-01-min.jpg" data-fancybox="woman" data-caption="Woman E-01"><img
+                src="img/photo/E-01_thumb.jpg" alt="e-01"></a>
+          </li>
+          <li>
+            <a href="img/photo/E-02-min.jpg" data-fancybox="woman" data-caption="Woman E-02"><img
+                src="img/photo/E-02_thumb.jpg" alt="e-02"></a>
+          </li>
+          <li>
+            <a href="img/photo/F-01-min.jpg" data-fancybox="woman" data-caption="Woman F-01"><img
+                src="img/photo/F-01_thumb.jpg" alt="f-03"></a>
+          </li>
+          <li>
+            <a href="img/photo/F-02-min.jpg" data-fancybox="woman" data-caption="Woman F-02"><img
+                src="img/photo/F-02_thumb.jpg" alt="f-04"></a>
+          </li>
+        </ul>
+      </div>
     </section>
     <!--Web-->
     <section id="web" class="section-box">
@@ -460,6 +402,7 @@
         <li><i class="fas fa-camera"></i></li>
         <li><i class="fas fa-video"></i></li>
       </ul>
+      <p class="up">あいうおえ</p>
       <p class="up">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -469,6 +412,7 @@
         commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
         laborum.</p>
+      <p class="up">あいうおえ</p>
       <ul class="img-box">
         <li class="hidden">
           <a href="img/profile/profile_02_gray.jpg" data-fancybox="profile" data-caption=""><img
@@ -534,6 +478,67 @@
       <p><small>&copy;&nbsp;2020&nbsp;White&nbsp;Stone</small></p>
     </div>
   </footer>
+  <!--fancybox js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+  <!--fancybox code-->
+  <script>
+    $(function () {
+      $('[data-fancybox="woman"]').fancybox({
+        loop: true,
+        transitionEffect: "circular",
+        animationEffect: "rotate"
+      });
+      $('[data-fancybox="gra"]').fancybox({
+        loop: true,
+        transitionEffect: "rotate",
+        animationEffect: "rotate"
+      });
+      $('[data-fancybox="youtube"]').fancybox({
+        loop: true
+      });
+      $('[data-fancybox="map"]').fancybox({
+        animationEffect: "zoom-in-out"
+      });
+      $('[data-fancybox="web"]').fancybox({
+        loop: true,
+        animationEffect: "fade"
+      });
+      $('[data-fancybox="profile"]').fancybox({
+        loop: true,
+        animationEffect: "fade"
+      });
+    });
+  </script>
+  <!--smoothscroll-->
+  <script src="js/SmoothScroll.js"></script>
+  <!--nav highlight-->
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        for (var i = 1; i <= 7; i++) {
+          if ($("section:nth-of-type(" + i + ")").offset().top < $(window).scrollTop() + 100) {
+            $(".gNav li").removeClass("current");
+            $(".gNav li:nth-of-type(" + i + ")").addClass("current");
+          }
+        }
+      });
+    });
+  </script>
+  <!--inview js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"
+    integrity="sha512-D68mBFX2aQwVh2wV6uCDLmabIveaSQL3uVUo2Ze7VwxIeOcAd4C1/JagkVoObb/NLkYDrdvY3JHK1KOfenHVcA=="
+    crossorigin="anonymous"></script>
+  <!--inview setup js-->
+  <script src="js/inview_set.js"></script>
+  <!--setTimeout-->
+  <script>
+    $(function () {
+      $("body").css({ opacity: '0' });
+      setTimeout(function () {
+        $("body").stop().animate({ opacity: '1' }, 2000);
+      }, 1000);
+    });
+  </script>
   <!-- particles.js -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!-- particle code -->

@@ -41,7 +41,7 @@ body {
   background-color: #fff;
   background-color: #f9f9f9;
   color: #000;
-  font-family: 'El Messiri', sans-serif;
+  font-family: 'El Messiri', "Noto Serif JP", sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -53,17 +53,18 @@ body {
 
 h1,
 h2 {
-  font-weight: bold;
   text-align: center;
   padding: 0.2em;
 }
 
 h1 {
+  font-weight: 400;
   font-size: 4em;
   margin-bottom: 0.5em;
 }
 
 h2 {
+  font-weight: bold;
   font-size: 2em;
   margin-bottom: 1em;
   padding-top: 1em;
@@ -227,6 +228,21 @@ ul.img-box li p a {
 
 ul.img-box li p a:hover {
   text-decoration: underline;
+}
+
+#g-design ul li a {
+  /* height: 100%; */
+  /* max-height: 200px; */
+}
+
+#g-design ul li a img {
+  /* background-color: red; */
+  /* opacity: 0.2; */
+  /* object-fit: contain; */
+  /* object-fit: fill; */
+  /* height: 100%; */
+  /* object-fit: cover; */
+  /* object-position: center center; */
 }
 
 /*===movie===*/

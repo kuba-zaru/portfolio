@@ -57,12 +57,6 @@ h2 {
   padding: 0.2em;
 }
 
-h1 {
-  font-weight: 400;
-  font-size: 4em;
-  margin-bottom: 0.5em;
-}
-
 h2 {
   font-weight: bold;
   font-size: 2em;
@@ -94,11 +88,15 @@ h2 {
 
 .header h1 {
   font-size: 5em;
+  font-weight: 400;
   line-height: 1.2;
+  letter-spacing: 0.2em;
+  /* margin-bottom: 0.5em; */
 }
 
 .header h1 span {
   font-size: 0.6em;
+  letter-spacing: 0;
 }
 
 @media screen and (max-width:480px) {
@@ -178,8 +176,7 @@ ul.img-box li a,
   position: relative;
 }
 
-ul.img-box li a::after,
-#profile figure a::after {
+ul.img-box li a::after {
   content: "\f00e";
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
@@ -198,8 +195,7 @@ ul.img-box li a::after,
   color: #fff;
 }
 
-ul.img-box li a:hover::after,
-#profile figure a:hover::after {
+ul.img-box li a:hover::after {
   opacity: 1;
 }
 
@@ -282,6 +278,35 @@ ul.img-box li p a:hover {
   display: none;
 }
 
+#skill .skill-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#skill .skill-box {
+  width: 45%;
+  margin-bottom: 4em;
+}
+
+#skill .skill-box h3 {
+  font-size: 1.5em;
+}
+
+#skill .skill-box h3 i {
+  padding-right: 0.5em;
+}
+
+#skill .skill-box p {
+  text-align: justify;
+}
+
+@media screen and (max-width:728px) {
+  #skill .skill-box p {
+    margin-right: 2em;
+  }
+}
+
 @media screen and (max-width:480px) {
   #profile figure {
     width: 80%;
@@ -290,30 +315,42 @@ ul.img-box li p a:hover {
   #profile .skill {
     width: 80%;
   }
-}
 
-/*===contact===*/
-#contact .sns {
-  width: 50%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.6em;
-}
-
-#contact .sns a:hover {
-  opacity: 0.5;
-}
-
-@media screen and (max-width:480px) {
-  #contact .sns {
-    width: 70%;
+  #skill .skill-box {
+    width: 100%;
   }
 }
 
-#contact,
-#access {
+/*===contact===*/
+
+.btn-box {
+  /* 中央寄せ */
+  display: flex;
+  justify-content: center;
+}
+
+#btn-contact {
+  background-color: #fff;
+  color: black;
+  padding: 0.5em 0;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #000;
+  border-radius: 4px;
+
+  width: 35%;
+  /* margin: 0 atuo; */
+}
+
+#btn-contact:hover {
+  background-color: #000;
+  color: #fff;
+  ;
+}
+
+@media screen and (max-width:480px) {}
+
+#contact {
   margin-bottom: 100px;
 }
 

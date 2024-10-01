@@ -195,18 +195,11 @@ ul.img-box li a::after {
   color: #fff;
 }
 
-.picture ul.img-box li {
-  /* opacity: 0.5; */
-  height: 200px;
-  padding: 0.5em;
-  background-color: #f9f9f9;
-  /* background: linear-gradient(to bottom, white, rgba(20, 20, 20, 0.8)); */
-  background: linear-gradient(to bottom, #f9f9f9, #eee);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-}
-
 .picture ul.img-box a {
   height: 200px;
+  padding: 0.5em;
+  background: linear-gradient(to bottom, #f9f9f9, #eee);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .picture ul.img-box a img {
@@ -215,7 +208,6 @@ ul.img-box li a::after {
   object-fit: contain;
   object-position: center center;
 }
-
 
 ul.img-box li a:hover::after {
   opacity: 1;
@@ -236,6 +228,15 @@ ul.img-box li p {
 @media screen and (max-width:728px) {
   ul.img-box li p {
     text-align: left;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .picture ul.img-box a {
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+    width: 95%;
   }
 }
 

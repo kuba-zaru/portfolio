@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+#header {
+  margin-bottom: var(--space-40);
+}
+
+#product-detail {
+  margin-bottom: var(--font-size-40);
+}
+
+#product-detail .product-detail-inner .item {
+  display: flex;
+  justify-content: space-between;
+}
+
+#product-detail .thumbnail-list {
+  width: 10%;
+  min-width: 64px;
+}
+
+#product-detail .thumbnail-list ul li {
+  margin-bottom: var(--space-10);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid var(--color-gray);
+}
+
+/* #product-detail .thumbnail-list li a {} */
+
+#product-detail .img-box {
+  width: 50%;
+}
+
+#product-detail .img-box img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  min-width: 240px;
+  /* min-height: 300px; */
+}
+
+#product-detail .detail-box {
+  width: 38%;
+}
+
+.detail-box .shop {
+  font-size: var(--font-size-15);
+  color: var(--color-darkgreen);
+}
+
+.detail-box h2 {
+  font-size: var(--font-size-30);
+}
+
+.detail-box h3 {
+  font-size: var(--font-size-25);
+  font-weight: normal;
+  margin-bottom: var(--space-5);
+}
+
+.detail-box h3 i {
+  margin-right: 0.2em;
+}
+
+.detail-box .star {
+  margin-bottom: var(--space-10);
+}
+
+.detail-box .point {
+  margin-bottom: var(--space-10);
+}
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* .slick-item { */
+/* background-color: beige; */
+/* width: 10%; */
+/* height: 200px; */
+/* } */
+
+.slick-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* slickの矢印をカスタマイズする */
+.slick-prev {
+  left: 8px;
+  top: 40%;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 32px;
+  top: 40%;
+  z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next::before {
+  color: #aaa;
+  font-size: 48px;
+  opacity: 0.6;
+}
+
+#check-list {
+  margin-bottom: var(--font-size-40);
+}
+
+#check-list h2 {
+  margin-bottom: var(--space-10);
+}

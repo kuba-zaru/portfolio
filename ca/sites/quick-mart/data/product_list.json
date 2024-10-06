@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "name": "あいうえおあいうえおあaaaaaいうえお1",
+    "shop": "ショップ1",
+    "description": "かきくけこかきくけこかきくけこ1",
+    "thumbnail": "img/product/skateboard08.jpg",
+    "price": 1111,
+    "point_back_ratio": 20,
+    "star": 1,
+    "images": [
+      "img/product/skateboard07.jpg",
+      "img/product/skateboard08.jpg",
+      "img/product/skateboard06.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお2",
+    "shop": "ショップ2",
+    "description": "かきくけこかきくけこかきくけこ2",
+    "thumbnail": "img/product/skateboard02.jpg",
+    "price": 2222,
+    "point_back_ratio": 30,
+    "star": 2,
+    "images": [
+      "img/product/skateboard01.jpg",
+      "img/product/skateboard02.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "あいう",
+    "shop": "ショップ3",
+    "description": "かきくけこかきくけこかきくけこ3",
+    "thumbnail": "img/product/skateboard07.jpg",
+    "price": 3333,
+    "point_back_ratio": 40,
+    "star": 3,
+    "images": [
+      "img/product/skateboard01.jpg",
+      "img/product/skateboard02.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "あいうえおあいうえおあいうえお4",
+    "shop": "ショップ4",
+    "description": "かきくけこかきくけこかきくけこ4",
+    "thumbnail": "img/product/skateboard04.jpg",
+    "price": 4444,
+    "point_back_ratio": 0,
+    "star": 4,
+    "images": [
+      "img/product/skateboard01.jpg",
+      "img/product/skateboard02.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "＼お得なP還元中！！／自転車カバー 厚手 防水 クス製 防犯防風 20-29インチ対応 210D 防犯 防風 盗難防止 雨避け 鍵穴盗難防止 雨雪対応き サイクルカバー ロックホール/収納袋付き",
+    "shop": "自転車売りたい屋",
+    "description": "ハンドルには可変式ステムを採用！クロスバイクはハンドルの角度が低く、ママチャリなどに比べると前傾姿勢で乗ることになり、初心者の方には辛く感じられることも。可変式ステムならハンドルの角度を自由に変更できるので、慣れるまでは高い角度に設定するなどの調整が可能です！",
+    "thumbnail": "img/product/bicycle01.jpg",
+    "price": 5555,
+    "star": 5,
+    "images": [
+      "img/product/bicycle01.jpg",
+      "img/product/bicycle02.jpg",
+      "img/product/bicycle03.jpg",
+      "img/product/bicycle04.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお6",
+    "shop": "ショップ6",
+    "description": "かきくけこかきくけこかきくけこ6",
+    "thumbnail": "img/product/bicycle02.jpg",
+    "price": 6666,
+    "star": 6,
+    "images": [
+      "img/product/bicycle01.jpg",
+      "img/product/bicycle02.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお7",
+    "shop": "ショップ7",
+    "description": "かきくけこかきくけこかきくけこ7",
+    "thumbnail": "img/product/bicycle03.jpg",
+    "price": 7777,
+    "star": 7,
+    "images": [
+      "img/product/bicycle01.jpg",
+      "img/product/bicycle02.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "あいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえおあいうえお8",
+    "shop": "ショップ8",
+    "description": "かきくけこかきくけこかきくけこ8",
+    "thumbnail": "img/product/bicycle04.jpg",
+    "price": 8888,
+    "star": 8,
+    "images": [
+      "img/product/bicycle01.jpg",
+      "img/product/bicycle02.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "【赤字覚悟 年間最低価格】お掃除ロボット ロボット掃除機 水拭き 吸引 両対応 ジャイロセンサー 効率清掃 静音 ロボットクリーナー 自動掃除機 オートクリーナー ペット 髪の毛 プレゼント 2WAY 吸引口 ギフト ラッピング 送料無料",
+    "shop": "ショップ9",
+    "description": "【革新的な自動集塵ドック・掃除習慣のレベルアップ】 DEEBOT N20ファミリーは画期的な自動集塵ステーションを採用します。最先端のECOVACS PureCycloneテクノロジーと洗練された4段階のフィルターシステムをシームレスに統合され、紙パック不要な設計と衰えない集塵力で、持続可能性を実現します。それにより、手間のかからない、環境にも優しい掃除の新時代が到来します。",
+    "thumbnail": "img/product/automatic_cleaner01.jpg",
+    "price": 9999,
+    "point_back_ratio": 50,
+    "star": 2,
+    "images": [
+      "img/product/automatic_cleaner01.jpg",
+      "img/product/automatic_cleaner02.jpg",
+      "img/product/automatic_cleaner03.jpg",
+      "img/product/automatic_cleaner04.jpg",
+      "img/product/automatic_cleaner05.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "あいうえお10",
+    "shop": "ショップ10",
+    "description": "かきくけこかきくけこかきくけこ10",
+    "thumbnail": "img/product/automatic_cleaner02.jpg",
+    "price": 1010,
+    "star": 10,
+    "images": [
+      "img/product/automatic_cleaner04.jpg",
+      "img/product/automatic_cleaner05.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "あいうえお11",
+    "shop": "ショップ11",
+    "description": "かきくけこかきくけこかきくけこ11",
+    "thumbnail": "img/product/automatic_cleaner03.jpg",
+    "price": 1111,
+    "star": 11,
+    "images": [
+      "img/product/automatic_cleaner04.jpg",
+      "img/product/automatic_cleaner05.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "あいうえおあいうえおあいうえお12",
+    "shop": "ショップ12",
+    "description": "かきくけこかきくけこかきくけこ12",
+    "thumbnail": "img/product/automatic_cleaner04.jpg",
+    "price": 1212,
+    "star": 12,
+    "images": [
+      "img/product/automatic_cleaner04.jpg",
+      "img/product/automatic_cleaner05.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "アコースティックギター 初心者セット 最初のギター アコギ 入門 セット 6点～14点",
+    "shop": "山田楽器",
+    "description": "初めての方向けのアコースティックギター12点セットです。 こちらのセット内容でギタースタートに必要なすべての付属品が揃っています。 また、サイズについても当店こだわりの38サイズで、ネックも細めに作っているため手の小さな女性やお子様でも演奏しやすいサイズとなっております。",
+    "thumbnail": "img/product/guitar01.jpg",
+    "price": 1313,
+    "point_back_ratio": 50,
+    "star": 1,
+    "images": [
+      "img/product/guitar01.jpg",
+      "img/product/guitar02.jpg",
+      "img/product/guitar03.jpg",
+      "img/product/guitar04.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "FIGURE UP しろかみ ノンスケール ABS&PVC製 完成品 フィギュア ",
+    "shop": "FIGURE UP",
+    "description": "話題のシリーズ最新作「しろかみ」が早くもフィギュア化!明るく元気いっぱいの表情や、ふわりと広がる衣装はしろかみのメインビジュアルを完全再現しています。なかでも、彼女の特徴でもあるホットパンツからはみ出る太ももは120%の再現度!武器、小物もこだわりを持って造形され、さらにゲームの世界観をイメージした専用台座も付属します。ぜひお手元で実感して下さい! ※商品の塗装は彩色工程が手作業になるため、商品個々に多少の差異があります。予めご了承ください。",
+    "thumbnail": "img/product/figure01.jpeg",
+    "price": 1414,
+    "star": 14,
+    "images": [
+      "img/product/figure01.jpeg",
+      "img/product/figure02.jpeg",
+      "img/product/figure03.jpeg",
+      "img/product/figure04.jpeg",
+      "img/product/figure05.jpeg"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "あいうえおあいうえおあいうえお15",
+    "shop": "ショップ15",
+    "description": "かきくけこかきくけこかきくけこ15",
+    "thumbnail": "img/product/guitar03.jpg",
+    "price": 1515,
+    "star": 15,
+    "images": [
+      "img/product/guitar01.jpg",
+      "img/product/guitar03.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "あいうえおあいうえおあいうえお16",
+    "shop": "ショップ16",
+    "description": "かきくけこかきくけこかきくけこ16",
+    "thumbnail": "img/product/guitar04.jpg",
+    "price": 1616,
+    "star": 16,
+    "images": [
+      "img/product/guitar01.jpg",
+      "img/product/guitar04.jpg"
+    ]
+  }
+]

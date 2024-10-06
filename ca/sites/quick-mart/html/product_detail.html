@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="日本最大級のショッピングサイトQuickMart">
+  <meta name="keywords" content="QuickMart,クイックマート,通信販売,通販,ショッピング,オンライン">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="format-detection" content="telephone=no">
+  <title>QuickMart</title>
+  <link rel="apple-touch-icon" href="../img/logo.svg">
+  <link rel="icon" sizes="192x192" href="../img/logo.svg">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- slick css -->
+  <link rel="stylesheet" href="../css/vendors/slick/slick.css">
+  <link rel="stylesheet" href="../css/vendors/slick/slick-theme.css">
+  <!-- user css -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/style_product_detail.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="global-wrap">
+
+    <!-- @header -->
+    <div id="header">
+      <div class="header-top">
+        <div class="header-top-inner wrap">
+          <h1><a href="../index.html" class=""><i class="fa-solid fa-basket-shopping"></i>QuickMart</a></h1>
+          <div class="search">
+            <div>
+              <input type="text"><a href="" class="disabled"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+          </div>
+          <nav class="global-nav">
+            <ul>
+              <li><a href="" class="disabled"><i class="fa-solid fa-cart-shopping"></i>
+                  <p>買い物かご</p>
+                </a></li>
+              <li><a href="" class="disabled"><i class="fa-regular fa-comment"></i>
+                  <p>お知らせ</p>
+                </a></li>
+              <li><a href="" class="disabled"><i class="fa-regular fa-star"></i>
+                  <p>お気に入り</p>
+                </a></li>
+              <li><a href="" class="disabled"><i class="fa-regular fa-file-lines"></i>
+                  <p>購入履歴</p>
+                </a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="header-bottom-inner wrap">
+          <p class="copy">ようこそQuickMartへ。会員登録でQ-Pointが貯まる、使える。</p>
+          <div>
+            <p class="register copy"><a href="" class="disabled"><i class="fa-regular fa-user"></i>QuickMart会員登録(無料)</a>
+            </p>
+            <p class="btn-login"><a href="" class="disabled">ログイン<i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end@header -->
+
+    <main class="wrap">
+      <section id="product-detail">
+        <div class="product-detail-inner">
+          <!-- ★内部の要素はjavascriptで自動生成する★ -->
+        </div>
+      </section>
+      <section id="check-list">
+        <h2>この商品をチェックした人はこんな商品もチェックしています</h2>
+        <div class="slider">
+          <!-- ★内部の要素はjavascriptで自動生成する★ -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- @footer -->
+  <footer>
+    <div class="footer-top">
+      <p id="top-back"><a href="#" class="">トップへ戻る</a></p>
+    </div>
+    <div class="footer-bottom">
+      <ul class="wrap">
+        <li><a href="" class="disabled">QuickMartについて</a></li>
+        <li><a href="" class="disabled">QuickMartでビジネス</a></li>
+        <li><a href="" class="disabled">QuickMartでのお支払い</a></li>
+        <li><a href="" class="disabled">Q-Point</a></li>
+        <li><a href="" class="disabled">ヘルプ＆ガイド</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- end@footer -->
+
+  <!-- slick js -->
+  <script src="../js/vendors/slick/slick.js"></script>
+  <!-- user js -->
+  <script src="../js/vendor_custom.js"></script>
+  <script src="../js/common.js"></script>
+
+  <script>
+    $(function () {
+
+      // jsonファイル
+      // TODO: jsonを読み込む部分は1回にしたい
+      const fileName = "../data/product_list.json";
+      const product_list = readJsonSynchronize(fileName);
+      // console.log(product_list);
+
+      // クエリ文字列を取得する
+      const _query = getUrlQueries();
+      // データを取得する
+      const element = product_list.find(({
+        id
+      }) => id == _query.id);
+
+      // TODO: ポイントバックの文言を入れたい。
+      const _output = `
+        <div class="item">
+          <div class="thumbnail-list">
+            <ul>
+              ${element.images.map((image, index) => `
+                <li><a href="" class="thumbnail-link ${index == 0 ? 'active' : ''}"><img src="../${image}" alt=""></a></li>
+              `).join('')}
+            </ul>
+          </div>
+
+          <div class="img-box">
+            <img src="../${element.thumbnail}" alt="xxx">
+          </div>
+
+          <div class="detail-box">
+            <p class="shop"><i class="fa-solid fa-store"></i>${element.shop}</p>
+            <h2 class="name">${element.name}</h2>
+            <p class="price">${element.price.toLocaleString()}<span class="yen">円</span><span class="postage">送料無料</span></p>
+            <p class="star">
+              ${generateStar(element.star)}
+            </p>
+            <p class="point"><i class="fa-brands fa-quora"></i>${Math.ceil(element.price / 10)}ポイント</p>
+            <h3><i class="fa-regular fa-lightbulb"></i>メーカーによる説明</h3>
+            <p class="description">${element.description}</p>
+          </div>
+        </div>
+      `;
+      // DOMに出力する
+      $('#product-detail .product-detail-inner').append(_output);
+
+      // この商品をチェックした人はこんな商品もチェックしています欄
+      let check_list_num = 12;
+      const _randoms_cl = generateUniqueRandomNumbers(check_list_num, product_list.length);
+      const _product_list = [];
+      _randoms_cl.forEach(function (element) {
+        _product_list.push(product_list[element]);
+      });
+      _product_list.some(function (element, idx) {
+        idx++;
+        const _output = `
+          <div class="product-item slick-item">
+            <figure class="">
+              <a href="product_detail.html?id=${element.id}">
+                <img src="../${element.thumbnail}" alt="${element.name}">
+                <figcaption>
+                  <p class="name">${element.name}</p>
+                  <p class="price">${element.price.toLocaleString()}<span>円</span></p>
+                  <p class="star">
+                    ${generateStar(element.star)}
+                  </p>
+                </figcaption>
+              </a>
+            </figure>
+          </div>
+        `;
+        // DOMに出力する
+        $('#check-list .slider').append(_output);
+        // ループ停止
+        return (idx >= check_list_num);
+      });
+
+      $('.slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 3,
+        autoplay: false,
+        speed: 500,
+        arrows: true,
+      });
+
+      // サムネイルクリックで画像を差し替える
+      // TODO: マウスhoverで画像差し替えを入れてみたい
+      // TODO: マウスhoverで画像拡大を入れてみたい
+      $(".thumbnail-link").click(function () {
+        // クリックされた画像ファイル名を取得する
+        const thumb_file_name = $(this).children("img").attr("src");
+        // 画像を差し替える
+        $(".img-box img").attr({
+          'src': thumb_file_name,
+        });
+        return false;
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>

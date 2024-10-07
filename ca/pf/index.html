@@ -19,6 +19,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
   <!--fontawesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.min.css">
   <!--layout css-->
   <link rel="stylesheet" href="css/style.css">
   <!--fancybox css-->
@@ -28,11 +30,30 @@
   <!--jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
+    /* === particle === */
     #particles-js {
       position: absolute;
       width: 100%;
       height: 100vh;
       z-index: -1;
+    }
+
+    /* === wave === */
+    .wave {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    #waveCanvas {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
     }
   </style>
 </head>
@@ -40,15 +61,20 @@
 <body>
   <!-- particles.js container -->
   <div id="particles-js"></div>
+  <!-- wave container -->
+  <div class="wave">
+    <canvas id="waveCanvas"></canvas>
+  </div>
 
+  <!-- <div id="header-wrap"> -->
   <div class="wrap">
     <p class="logo"><a href="#"><img src="img/logo.svg" alt="logo"></a></p>
 
     <!--header-bg-->
     <section class="header-bg">
-      <header class="header fadeUpTrigger">
+      <header class="header fadeUpTrigger ">
         <h1>Portfolio<br><span>Kuba&nbsp;Takayuki</span></h1>
-        <p class="topBack"><a href="#g-design"><i class="fas fa-angle-double-down"></i></a></p>
+        <p class="topBack faa-float animated"><a href="#g-design"><i class="fas fa-angle-double-down"></i></a></p>
       </header>
     </section>
 
@@ -251,7 +277,7 @@
     </section>
   </div>
 
-  <p class="topBack fadeUpTrigger"><a href="#"><i class="fas fa-angle-double-up faa-float animated-hover"></i></a></p>
+  <p class="topBack fadeUpTrigger "><a href="#" class="" ><i class="fas fa-angle-double-up faa-float animated"></i></a></p>
 
   <!--footer-->
   <footer class="footer">
@@ -296,14 +322,25 @@
   <script src="js/SmoothScroll.js"></script>
   <!--nav highlight-->
   <script>
+    /**
+     * スクロール量に応じてナビゲーションをハイライトする
+     */
+    function highlightNav() {
+      for (var i = 1; i <= 7; i++) {
+        if ($("section:nth-of-type(" + i + ")").offset().top < $(window).scrollTop() + 100) {
+          $(".gNav li").removeClass("current");
+          $(".gNav li:nth-of-type(" + i + ")").addClass("current");
+        }
+      }
+    }
+    $(window).on('load', function () {
+      // load時にナビゲーションをハイライトする
+      highlightNav();
+    });
     $(function () {
       $(window).scroll(function () {
-        for (var i = 1; i <= 7; i++) {
-          if ($("section:nth-of-type(" + i + ")").offset().top < $(window).scrollTop() + 100) {
-            $(".gNav li").removeClass("current");
-            $(".gNav li:nth-of-type(" + i + ")").addClass("current");
-          }
-        }
+        // scroll時にナビゲーションをハイライトする
+        highlightNav();
       });
     });
   </script>
@@ -330,6 +367,9 @@
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!-- particle code -->
   <script src="js/particle.js"></script>
+  <!-- wave code -->
+  <script src="js/wave.js"></script>
+
 </body>
 
 </html>

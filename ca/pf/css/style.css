@@ -181,7 +181,8 @@ ul.img-box li a,
   position: relative;
 }
 
-ul.img-box li a::after {
+/* マウスホバーで表示する疑似要素 */
+/* ul.img-box li a::after {
   content: "\f00e";
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
@@ -198,7 +199,7 @@ ul.img-box li a::after {
   opacity: 0;
   transition: 0.2s 0.1s;
   color: #fff;
-}
+} */
 
 .picture ul.img-box a {
   height: 235px;
@@ -220,13 +221,19 @@ ul.img-box li a::after {
   object-position: center center;
 }
 
-ul.img-box li a:hover::after {
-  opacity: 1;
+.picture ul.img-box a:hover img {
+  /* マウスホバーで画像を拡大する */
+  opacity: 0.8;
+  transform: scale(1.1, 1.1);
 }
 
+/* マウスホバーで表示する疑似要素 */
+/* ul.img-box li a:hover::after {
+  opacity: 1;
+}
 ul.img-box.web p a::after {
   content: "";
-}
+} */
 
 ul.img-box li img {
   transition: 0.3s;

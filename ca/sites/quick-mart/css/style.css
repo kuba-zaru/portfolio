@@ -16,13 +16,13 @@
 
 #hero-slider div.img01 {
   background-image:
-    linear-gradient(transparent, rgba(0, 0, 0, 0.4)),
+    linear-gradient(transparent, rgba(0, 0, 0, 0.8)),
     url(../img/hero_01.jpg);
 }
 
 #hero-slider div.img02 {
   background-image:
-    linear-gradient(transparent, rgba(0, 0, 0, 0.4)),
+    linear-gradient(transparent, rgba(0, 0, 0, 0.8)),
     url(../img/hero_02.jpg);
 }
 
@@ -35,17 +35,24 @@
 #hero-slider div p {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
   /* vertical-align: middle; */
   text-align: center;
   padding-top: 14vh;
-
-
+  /* padding-top: 20vh; */
+  /* font-size: var(--font-size-50); */
+  /* transform: translateY(var(--font-size-50) * -1); */
 }
 
 #hero-slider .slick-dots {
   bottom: 4%;
   z-index: +1;
+}
+
+@media screen and (max-width: 800px) {
+  #hero-slider div p {
+    font-size: var(--font-size-15);
+  }
 }
 
 
@@ -69,6 +76,12 @@ main h2 {
 
 main h2 i {
   margin-right: 0.2em;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    margin-bottom: var(--space-40);
+  }
 }
 
 /* === ranking === */
@@ -101,47 +114,39 @@ main h2 i {
   font-size: var(--font-size-15);
 }
 
-/* .ranking-list-inner .product-item .name { */
-/* overflow: hidden; */
-/* display: -webkit-box; */
-/* -webkit-box-orient: vertical; */
-/* 出力したい行数を指定する */
-/* -webkit-line-clamp: 2; */
-/* min-height: 38px; */
-/* } */
-
-/* .ranking-list-inner a {
-  display: block;
-} */
-
 .ranking-list-inner .product-item img {
   object-fit: cover;
   object-position: center center;
   margin-bottom: 0.5em;
 }
 
-/* .ranking-list-inner .product-item figcaption {
-  font-size: var(--font-size-15);
-  padding: 0.2em;
-  text-align: justify;
-} */
+@media screen and (max-width: 800px) {
+  #ranking-list .product-item:nth-of-type(6) {
+    display: none;
+  }
 
-/* .ranking-list-inner .product-item .star {
-  text-align: right;
-} */
+  .ranking-list-inner .product-item {
+    width: 20%;
+  }
+}
 
-/* .ranking-list-inner .price {
-  text-align: right;
-  font-size: var(--font-size-30);
-  font-weight: bold;
-  color: red;
-} */
+@media screen and (max-width: 500px) {
 
-/* .ranking-list-inner figure:hover .name {
-  text-decoration: underline;
-} */
+  #ranking-list .product-item:nth-of-type(4),
+  #ranking-list .product-item:nth-of-type(5) {
+    display: none;
+  }
+
+  .ranking-list-inner .product-item {
+    width: 33%;
+  }
+}
 
 /* === product list === */
+#product-list h2 {
+  margin-bottom: var(--space-20);
+}
+
 #product-list .product-list-inner {
   display: flex;
   justify-content: space-between;
@@ -170,6 +175,20 @@ main h2 i {
   /* 出力したい行数を指定する */
   -webkit-line-clamp: 3;
   min-height: 74px;
+  margin-bottom: 0.75em;
+}
+
+.product-box .price {
+  line-height: 0.6;
+  margin-bottom: 0.2em;
+}
+
+.product-box .star {
+  margin-bottom: 0.4em;
+}
+
+.product-box .shop {
+  color: var(--color-darkgreen);
 }
 
 .product-box a {
@@ -181,24 +200,23 @@ main h2 i {
   text-decoration: underline;
 }
 
-/* .product-box .price {
-  color: var(--color-red);
-  font-weight: bold;
-  font-size: 32px;
+@media screen and (max-width:1000px) {
+  .product-box .price .postage {
+    margin: 0;
+  }
 }
 
-.product-box .yen {
-  font-size: 0.5em;
+@media screen and (max-width:800px) {
+  .product-box {
+    width: 32%;
+  }
 }
 
-.product-box .postage {
-  font-size: 0.5em;
-  margin-left: 0.4em;
-} */
-
-/* .product-box .point {
-  color: var(--color-red);
-} */
+@media screen and (max-width:500px) {
+  .product-box {
+    width: 48%;
+  }
+}
 
 .pagination {
   /* background-color: red; */
@@ -208,11 +226,6 @@ main h2 i {
   border-radius: 6px;
   padding: 0 1em;
   /* box-sizing: border-box; */
-}
-
-.pagination div {
-  /* width: 100%; */
-  /* height: 100%; */
 }
 
 .pagination div:first-child {
@@ -238,10 +251,12 @@ main h2 i {
 /* === aside === */
 aside {
   width: 20%;
-  max-width: 200px;
+  /* max-width: 200px; */
   /* min-width: 160px; */
   /* background-color: beige; */
-  padding: 1em;
+  /* padding: 1em; */
+  padding-top: 1em;
+  padding-left: 1em;
   font-size: var(--font-size-15);
   box-sizing: border-box;
 }
@@ -251,14 +266,40 @@ aside h2 {
 }
 
 aside div {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 
 }
 
-aside div ul {
+aside .link-list ul {
   line-height: 2;
 }
 
-aside div ul a:hover {
+aside .link-list ul a:hover {
   text-decoration: underline;
+}
+
+aside .banner-list ul li {
+  margin-bottom: 1em;
+}
+
+
+@media screen and (max-width: 800px) {
+  .main-aside-wrap {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+    margin-bottom: var(--space-40);
+    padding: 0;
+  }
+
+  aside .banner-list {
+    /* 一旦バナーを削除する。 */
+    display: none;
+  }
 }

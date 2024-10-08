@@ -22,10 +22,16 @@
   margin-bottom: var(--space-10);
   border-radius: 8px;
   overflow: hidden;
-  border: 2px solid var(--color-gray);
+  border: 3px solid var(--color-gray);
 }
 
-/* #product-detail .thumbnail-list li a {} */
+#product-detail .thumbnail-list ul li img {
+  transition: 0.5s;
+}
+
+#product-detail .thumbnail-list .hover-zoom:hover img {
+  transform: scale(1.1);
+}
 
 #product-detail .img-box {
   width: 50%;
@@ -48,8 +54,13 @@
   color: var(--color-darkgreen);
 }
 
+.detail-box .shop a:hover {
+  text-decoration: underline;
+}
+
 .detail-box h2 {
   font-size: var(--font-size-30);
+  text-align: justify;
 }
 
 .detail-box h3 {
@@ -69,6 +80,64 @@
 .detail-box .point {
   margin-bottom: var(--space-10);
 }
+
+.detail-box .btn-register {
+  /* width: 200px; */
+  /* box-sizing: border-box; */
+  /* height: 3em; */
+  display: inline-block;
+  width: auto;
+  margin-bottom: var(--space-20)
+}
+
+.detail-box .btn-register a {
+  background-color: var(--btn-primary);
+  color: var(--color-white);
+  border-radius: 8px;
+
+  padding: 0.8em 1em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-box .btn-register img {
+  width: 32px;
+  margin-right: 0.3em;
+}
+
+.detail-box .description {
+  text-align: justify;
+}
+
+@media screen and (max-width:800px) {
+  #product-detail .product-detail-inner .item {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #product-detail .thumbnail-list {
+    width: 15%;
+    min-width: 0;
+    /* margin-right: 1%; */
+  }
+
+  #product-detail .img-box {
+    width: 83%;
+    /* max-width: 600px; */
+  }
+
+  #product-detail .img-box img {
+    margin: 0 auto;
+  }
+
+  #product-detail .detail-box {
+    width: 100%;
+  }
+
+}
+
 
 .slider {
   width: 100%;
@@ -113,4 +182,26 @@
 
 #check-list h2 {
   margin-bottom: var(--space-10);
+}
+
+#check-list h2 i {
+  margin-right: 0.2em;
+}
+
+
+#check-list .slick-slide {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+@media screen and (max-width:800px) {
+  #check-list h2 {
+    font-size: var(--font-size-25);
+  }
+}
+
+@media screen and (max-width:500px) {
+  #check-list .slick-slide .product-item .price {
+    font-size: var(--font-size-25);
+  }
 }

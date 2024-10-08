@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480 480">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 22px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #000;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        stroke-width: 10px;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="_レイヤー_1" data-name="レイヤー_1">
+      <image width="43" height="33" transform="translate(489 -855) scale(14.8)" xlink:href="logo-icon-cart-black-1.png"/>
+      <polyline class="cls-3" points="-220 -872 -154 -872 -69 -469 239 -469"/>
+      <polyline class="cls-3" points="-87.5 -556.9 239 -556.9 296 -810 -139.5 -810"/>
+      <circle class="cls-3" cx="-14.5" cy="-399.5" r="33"/>
+      <circle class="cls-3" cx="160.5" cy="-399.5" r="33"/>
+      <path d="M437.3,309.1l42.5-248.5c.5-3.1-.3-6.3-2.4-8.7-2-2.4-5-3.8-8.2-3.8H75l-7.6-39.4C66.4,3.6,61.9,0,56.8,0H10.7C4.8,0,0,4.8,0,10.7s4.8,10.7,10.7,10.7h37.2l68.2,352.6c1,5,5.4,8.7,10.5,8.7h303c5.9,0,10.7-4.8,10.7-10.7s-4.8-10.7-10.7-10.7H135.5l-8.4-43.3h299.6c5.2,0,9.7-3.8,10.6-8.9ZM123,296.6l-43.9-227h377.4l-38.9,227H123Z"/>
+      <circle cx="180.1" cy="444.7" r="35.3"/>
+      <circle cx="369.6" cy="444.7" r="35.3" transform="translate(-66.5 64.9) rotate(-9.2)"/>
+      <path d="M369,257.8l-16.4-11c13.3-17.4,21.1-39.2,21.1-62.7,0-57.3-46.6-103.9-103.9-103.9s-103.9,46.6-103.9,103.9,46.6,103.9,103.9,103.9,49.7-9.5,67.9-25.3l19.3,12.9c1.8,1.2,3.9,1.8,6,1.8,3.5,0,6.9-1.7,8.9-4.8,3.3-4.9,2-11.6-2.9-14.9ZM269.9,266.6c-45.5,0-82.4-37-82.4-82.4s37-82.4,82.4-82.4,82.4,37,82.4,82.4-6.6,36.8-17.6,50.8l-27.2-18.2c-4.9-3.3-11.6-2-14.9,2.9-3.3,4.9-2,11.6,2.9,14.9l23.5,15.7c-13.7,10.3-30.8,16.3-49.2,16.3Z"/>
+      <polyline class="cls-2" points="-856 -872.3 -808.8 -872.3 -737.2 -502 -426.6 -502"/>
+      <polyline class="cls-2" points="-741.8 -568.3 -429.6 -568.3 -386 -823 -794.2 -823"/>
+      <circle cx="-677.5" cy="-437.3" r="35"/>
+      <circle cx="-489.5" cy="-437.3" r="35"/>
+      <circle class="cls-1" cx="-595.5" cy="-691.5" r="95.5"/>
+      <line class="cls-2" x1="-563" y1="-649" x2="-500" y2="-606.8"/>
+    </g>
+  </g>
+</svg>

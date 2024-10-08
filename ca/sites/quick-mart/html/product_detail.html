@@ -9,8 +9,8 @@
   <meta name="robots" content="noindex,nofollow">
   <meta name="format-detection" content="telephone=no">
   <title>QuickMart</title>
-  <link rel="apple-touch-icon" href="../img/logo.svg">
-  <link rel="icon" sizes="192x192" href="../img/logo.svg">
+  <link rel="apple-touch-icon" href="../img/logo-icon-cart-black.svg">
+  <link rel="icon" sizes="192x192" href="../img/logo-icon-cart-black.svg">
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,10 +35,12 @@
     <div id="header">
       <div class="header-top">
         <div class="header-top-inner wrap">
-          <h1><a href="../index.html" class=""><i class="fa-solid fa-basket-shopping"></i>QuickMart</a></h1>
-          <div class="search">
+          <h1><a href="../index.html"><img src="../img/logo-icon-cart-white.svg" alt="" class="icon"><img
+                src="../img/logo-type-white.svg" alt="logo" class="logo-type"></a></h1>
+          <div class="search pc">
             <div>
-              <input type="text"><a href="" class="disabled"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <input type="text" placeholder="キーワード検索">
+              <a href="" class="disabled"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
           </div>
           <nav class="global-nav">
@@ -58,6 +60,12 @@
             </ul>
           </nav>
         </div>
+        <div class="search mobile">
+          <div>
+            <input type="text" placeholder="キーワード検索">
+            <a href="" class="disabled"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+        </div>
       </div>
       <div class="header-bottom">
         <div class="header-bottom-inner wrap">
@@ -65,7 +73,8 @@
           <div>
             <p class="register copy"><a href="" class="disabled"><i class="fa-regular fa-user"></i>QuickMart会員登録(無料)</a>
             </p>
-            <p class="btn-login"><a href="" class="disabled">ログイン<i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+            <p class="btn btn-login"><a href="" class="disabled">ログイン<i
+                  class="fa-solid fa-arrow-right-to-bracket"></i></a>
             </p>
           </div>
         </div>
@@ -80,7 +89,7 @@
         </div>
       </section>
       <section id="check-list">
-        <h2>この商品をチェックした人はこんな商品もチェックしています</h2>
+        <h2><i class="fa-solid fa-flag-checkered"></i>この商品をチェックした人はこんな商品もチェックしています</h2>
         <div class="slider">
           <!-- ★内部の要素はjavascriptで自動生成する★ -->
         </div>
@@ -95,9 +104,9 @@
     </div>
     <div class="footer-bottom">
       <ul class="wrap">
-        <li><a href="" class="disabled">QuickMartについて</a></li>
-        <li><a href="" class="disabled">QuickMartでビジネス</a></li>
-        <li><a href="" class="disabled">QuickMartでのお支払い</a></li>
+        <li><a href="" class="disabled">QuickMart<br class="br-500">について</a></li>
+        <li><a href="" class="disabled">QuickMartで<br class="br-500">ビジネス</a></li>
+        <li><a href="" class="disabled">QuickMartでの<br class="br-500">お支払い</a></li>
         <li><a href="" class="disabled">Q-Point</a></li>
         <li><a href="" class="disabled">ヘルプ＆ガイド</a></li>
       </ul>
@@ -114,42 +123,46 @@
   <script>
     $(function () {
 
-      // jsonファイル
-      // TODO: jsonを読み込む部分は1回にしたい
+      // jsonファイルを読み込む
       const fileName = "../data/product_list.json";
       const product_list = readJsonSynchronize(fileName);
-      // console.log(product_list);
 
       // クエリ文字列を取得する
       const _query = getUrlQueries();
-      // データを取得する
+      // idを条件に表示するデータを特定する
       const element = product_list.find(({
         id
       }) => id == _query.id);
 
+      // 商品詳細を表示する
       // TODO: ポイントバックの文言を入れたい。
       const _output = `
         <div class="item">
           <div class="thumbnail-list">
             <ul>
               ${element.images.map((image, index) => `
-                <li><a href="" class="thumbnail-link ${index == 0 ? 'active' : ''}"><img src="../${image}" alt=""></a></li>
+                <li><a href="" class="thumbnail-link ${index == 0 ? 'active' : ''} hover-zoom"><img src="../${image}" alt=""></a></li>
               `).join('')}
             </ul>
           </div>
 
           <div class="img-box">
-            <img src="../${element.thumbnail}" alt="xxx">
+            <img src="../${element.thumbnail}" alt="xxx" id="main-img">
           </div>
 
           <div class="detail-box">
-            <p class="shop"><i class="fa-solid fa-store"></i>${element.shop}</p>
+            <p class="shop"><a href="" class="disabled" ><i class="fa-solid fa-store"></i>${element.shop}</a></p>
             <h2 class="name">${element.name}</h2>
             <p class="price">${element.price.toLocaleString()}<span class="yen">円</span><span class="postage">送料無料</span></p>
             <p class="star">
               ${generateStar(element.star)}
             </p>
             <p class="point"><i class="fa-brands fa-quora"></i>${Math.ceil(element.price / 10)}ポイント</p>
+            <p class="btn btn-register">
+              <a href="" class="disabled" >
+                <img src="../img/logo-icon-cart-white.svg" alt="" class="icon">カートに追加
+              </a>
+            </p>
             <h3><i class="fa-regular fa-lightbulb"></i>メーカーによる説明</h3>
             <p class="description">${element.description}</p>
           </div>
@@ -158,7 +171,7 @@
       // DOMに出力する
       $('#product-detail .product-detail-inner').append(_output);
 
-      // この商品をチェックした人はこんな商品もチェックしています欄
+      // この商品をチェックした人はこんな商品もチェックしています欄を表示する
       let check_list_num = 12;
       const _randoms_cl = generateUniqueRandomNumbers(check_list_num, product_list.length);
       const _product_list = [];
@@ -166,12 +179,13 @@
         _product_list.push(product_list[element]);
       });
       _product_list.some(function (element, idx) {
-        idx++;
         const _output = `
           <div class="product-item slick-item">
             <figure class="">
-              <a href="product_detail.html?id=${element.id}">
-                <img src="../${element.thumbnail}" alt="${element.name}">
+              <a href="product_detail.html?id=${element.id}" class="hover-zoom">
+                <div class="img-box">
+                  <img src="../${element.thumbnail}" alt="${element.name}">
+                </div>
                 <figcaption>
                   <p class="name">${element.name}</p>
                   <p class="price">${element.price.toLocaleString()}<span>円</span></p>
@@ -189,14 +203,6 @@
         return (idx >= check_list_num);
       });
 
-      $('.slider').slick({
-        slidesToShow: 5,
-        slidesToScroll: 3,
-        autoplay: false,
-        speed: 500,
-        arrows: true,
-      });
-
       // サムネイルクリックで画像を差し替える
       // TODO: マウスhoverで画像差し替えを入れてみたい
       // TODO: マウスhoverで画像拡大を入れてみたい
@@ -204,12 +210,30 @@
         // クリックされた画像ファイル名を取得する
         const thumb_file_name = $(this).children("img").attr("src");
         // 画像を差し替える
-        $(".img-box img").attr({
+        $("#product-detail #main-img").attr({
           'src': thumb_file_name,
         });
         return false;
       });
+    });
+  </script>
+  <!-- slick code -->
 
+  <script>
+    $(function () {
+      $('.slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 3,
+        autoplay: false,
+        speed: 500,
+        arrows: true,
+        responsive: [{
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 3
+          }
+        }]
+      });
     });
   </script>
 

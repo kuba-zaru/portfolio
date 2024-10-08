@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": 1,
     "name": "あいうえおあいうえおあaaaaaいうえお1",
     "shop": "ショップ1",
@@ -78,7 +77,7 @@
     "description": "かきくけこかきくけこかきくけこ6",
     "thumbnail": "img/product/bicycle02.jpg",
     "price": 6666,
-    "star": 6,
+    "star": 1,
     "images": [
       "img/product/bicycle01.jpg",
       "img/product/bicycle02.jpg"
@@ -91,7 +90,7 @@
     "description": "かきくけこかきくけこかきくけこ7",
     "thumbnail": "img/product/bicycle03.jpg",
     "price": 7777,
-    "star": 7,
+    "star": 2,
     "images": [
       "img/product/bicycle01.jpg",
       "img/product/bicycle02.jpg"
@@ -104,7 +103,7 @@
     "description": "かきくけこかきくけこかきくけこ8",
     "thumbnail": "img/product/bicycle04.jpg",
     "price": 8888,
-    "star": 8,
+    "star": 3,
     "images": [
       "img/product/bicycle01.jpg",
       "img/product/bicycle02.jpg"
@@ -118,7 +117,7 @@
     "thumbnail": "img/product/automatic_cleaner01.jpg",
     "price": 9999,
     "point_back_ratio": 50,
-    "star": 2,
+    "star": 4,
     "images": [
       "img/product/automatic_cleaner01.jpg",
       "img/product/automatic_cleaner02.jpg",
@@ -134,7 +133,7 @@
     "description": "かきくけこかきくけこかきくけこ10",
     "thumbnail": "img/product/automatic_cleaner02.jpg",
     "price": 1010,
-    "star": 10,
+    "star": 5,
     "images": [
       "img/product/automatic_cleaner04.jpg",
       "img/product/automatic_cleaner05.jpg"
@@ -147,7 +146,7 @@
     "description": "かきくけこかきくけこかきくけこ11",
     "thumbnail": "img/product/automatic_cleaner03.jpg",
     "price": 1111,
-    "star": 11,
+    "star": 1,
     "images": [
       "img/product/automatic_cleaner04.jpg",
       "img/product/automatic_cleaner05.jpg"
@@ -160,7 +159,7 @@
     "description": "かきくけこかきくけこかきくけこ12",
     "thumbnail": "img/product/automatic_cleaner04.jpg",
     "price": 1212,
-    "star": 12,
+    "star": 2,
     "images": [
       "img/product/automatic_cleaner04.jpg",
       "img/product/automatic_cleaner05.jpg"
@@ -174,7 +173,7 @@
     "thumbnail": "img/product/guitar01.jpg",
     "price": 1313,
     "point_back_ratio": 50,
-    "star": 1,
+    "star": 3,
     "images": [
       "img/product/guitar01.jpg",
       "img/product/guitar02.jpg",
@@ -189,7 +188,7 @@
     "description": "話題のシリーズ最新作「しろかみ」が早くもフィギュア化!明るく元気いっぱいの表情や、ふわりと広がる衣装はしろかみのメインビジュアルを完全再現しています。なかでも、彼女の特徴でもあるホットパンツからはみ出る太ももは120%の再現度!武器、小物もこだわりを持って造形され、さらにゲームの世界観をイメージした専用台座も付属します。ぜひお手元で実感して下さい! ※商品の塗装は彩色工程が手作業になるため、商品個々に多少の差異があります。予めご了承ください。",
     "thumbnail": "img/product/figure01.jpeg",
     "price": 1414,
-    "star": 14,
+    "star": 4,
     "images": [
       "img/product/figure01.jpeg",
       "img/product/figure02.jpeg",
@@ -205,7 +204,7 @@
     "description": "かきくけこかきくけこかきくけこ15",
     "thumbnail": "img/product/guitar03.jpg",
     "price": 1515,
-    "star": 15,
+    "star": 5,
     "images": [
       "img/product/guitar01.jpg",
       "img/product/guitar03.jpg"
@@ -218,7 +217,59 @@
     "description": "かきくけこかきくけこかきくけこ16",
     "thumbnail": "img/product/guitar04.jpg",
     "price": 1616,
-    "star": 16,
+    "star": 1,
+    "images": [
+      "img/product/guitar01.jpg",
+      "img/product/guitar04.jpg"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "あいうえおあいうえおあいうえお17",
+    "shop": "ショップ17",
+    "description": "かきくけこかきくけこかきくけこ17",
+    "thumbnail": "img/product/guitar01.jpg",
+    "price": 1717,
+    "star": 1,
+    "images": [
+      "img/product/guitar01.jpg",
+      "img/product/guitar04.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "あいうえおあいうえおあいうえお18",
+    "shop": "ショップ18",
+    "description": "かきくけこかきくけこかきくけこ18",
+    "thumbnail": "img/product/guitar01.jpg",
+    "price": 1818,
+    "star": 1,
+    "images": [
+      "img/product/guitar01.jpg",
+      "img/product/guitar04.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "あいうえおあいうえおあいうえお19",
+    "shop": "ショップ19",
+    "description": "かきくけこかきくけこかきくけこ19",
+    "thumbnail": "img/product/guitar01.jpg",
+    "price": 1919,
+    "star": 1,
+    "images": [
+      "img/product/guitar01.jpg",
+      "img/product/guitar04.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "あいうえおあいうえおあいうえお20",
+    "shop": "ショップ20",
+    "description": "かきくけこかきくけこかきくけこ20",
+    "thumbnail": "img/product/guitar01.jpg",
+    "price": 202020,
+    "star": 1,
     "images": [
       "img/product/guitar01.jpg",
       "img/product/guitar04.jpg"

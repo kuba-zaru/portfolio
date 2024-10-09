@@ -763,33 +763,7 @@
 
 /*========= レイアウトのためのCSS ===============*/
 
-.wrapper {
-  overflow: hidden;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.box {
-  width: 220px;
-  padding: 20px;
-  margin: 0 20px 20px 20px;
-  background: #666;
-  color: #fff;
-  box-sizing: border-box;
-}
-
-.bgextend,
-.lineTrigger {
-  width: 220px;
-  padding: 20px;
-  margin: 0 20px 20px 20px;
-  box-sizing: border-box;
-}
-
-
+/* レイアウトは別ファイルに記載する */
 
 /*==================================================
 アニメーション設定

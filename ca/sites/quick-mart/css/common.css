@@ -5,6 +5,7 @@
   --content-width: 1200px;
   --content-width-min: 360px;
   --hero-header-height: 300px;
+  --content-min-width: 350px;
 
   /* フォントカラー */
   --color-black: #333;
@@ -64,6 +65,7 @@ a:hover {
 
 .wrap {
   max-width: var(--content-width);
+  min-width: var(--content-min-width);
   margin: 0 auto;
   padding-left: 12px;
   padding-right: 12px;
@@ -179,8 +181,9 @@ a:hover {
 }
 
 @media screen and (max-width: 500px) {
+
   /* body{ */
-    /* font-size: 14px; */
+  /* font-size: 14px; */
   /* } */
   .br-500 {
     display: block;
@@ -340,6 +343,33 @@ a:hover {
   text-decoration: underline;
 }
 
+.global-nav ul li .icomoon {
+  /* icomoonのアイコンの設定 */
+  font-size: 24px;
+  transform: translateX(-0.1em);
+  /* z-index: 1; */
+}
+
+.global-nav ul li.cart {
+  /* カート数量を表示するために、relativeを指定する */
+  position: relative;
+}
+
+.global-nav ul li.cart .num {
+  position: absolute;
+  bottom: 12px;
+  right: 0;
+
+  background-color: var(--btn-primary);
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+
+  border-radius: 50%;
+  text-align: center;
+  opacity: 0.9;
+}
+
 .global-nav ul li i {
   font-size: 24px;
   transform: translateX(-0.1em);
@@ -377,8 +407,13 @@ a:hover {
   }
 
   .global-nav p {
+    /* ナビゲーションの文字を非表示にする */
     display: none;
   }
+
+  /* .global-nav ul li.cart .num { */
+  /* display: block; */
+  /* } */
 }
 
 .header-bottom {

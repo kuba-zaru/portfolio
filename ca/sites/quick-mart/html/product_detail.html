@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- icomoon -->
+  <link rel="stylesheet" href="../css/icomoon/icomoon.css">
   <!-- slick css -->
   <link rel="stylesheet" href="../css/vendors/slick/slick.css">
   <link rel="stylesheet" href="../css/vendors/slick/slick-theme.css">
@@ -45,9 +47,11 @@
           </div>
           <nav class="global-nav">
             <ul>
-              <li><a href="" class="disabled"><i class="fa-solid fa-cart-shopping"></i>
+              <li class="cart"><a href="" class="disabled"><span class="icomoon icon-logo-icon-cart-black"></span>
                   <p>買い物かご</p>
-                </a></li>
+                  <p class="num"><span>1</span></p>
+                </a>
+              </li>
               <li><a href="" class="disabled"><i class="fa-regular fa-comment"></i>
                   <p>お知らせ</p>
                 </a></li>
@@ -141,13 +145,13 @@
           <div class="thumbnail-list">
             <ul>
               ${element.images.map((image, index) => `
-                <li><a href="" class="thumbnail-link ${index == 0 ? 'active' : ''} hover-zoom"><img src="../${image}" alt=""></a></li>
+                <li class="${index == 0 ? 'active' : ''}"><a href="" class="thumbnail-link hover-zoom"><img src="../${image}" alt=""></a></li>
               `).join('')}
             </ul>
           </div>
 
           <div class="img-box">
-            <img src="../${element.thumbnail}" alt="xxx" id="main-img">
+            <img src="../${element.images[0]}" alt="xxx" id="main-img">
           </div>
 
           <div class="detail-box">
@@ -213,6 +217,9 @@
         $("#product-detail #main-img").attr({
           'src': thumb_file_name,
         });
+        $('#product-detail .thumbnail-list  ul li').removeClass("active");
+        $(this).parent().addClass("active");
+
         return false;
       });
     });

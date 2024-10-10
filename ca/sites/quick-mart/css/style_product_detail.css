@@ -23,6 +23,13 @@
   border-radius: 8px;
   overflow: hidden;
   border: 3px solid var(--color-gray);
+  transition: 0.5s;
+}
+
+#product-detail .thumbnail-list ul li.active {
+  /* サムネイルリストクリックで目立つようにする */
+  border: 3px solid var(--btn-primary);
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 #product-detail .thumbnail-list ul li img {
@@ -60,7 +67,8 @@
 
 .detail-box h2 {
   font-size: var(--font-size-30);
-  text-align: justify;
+  /* 行端揃えをすると文字間隔が変になることがあるのでコメントアウトする。 */
+  /* text-align: justify; */
 }
 
 .detail-box h3 {

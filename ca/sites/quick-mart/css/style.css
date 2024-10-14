@@ -183,12 +183,20 @@ main h2 i {
   margin-bottom: 0.2em;
 }
 
+.product-box .point {
+  text-align: left;
+}
+
 .product-box .star {
   margin-bottom: 0.4em;
 }
 
 .product-box .shop {
   color: var(--color-darkgreen);
+}
+
+.product-box .shop i {
+  margin-right: 0.2em;
 }
 
 .product-box a {

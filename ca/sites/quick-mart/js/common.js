@@ -108,3 +108,13 @@ function generateUniqueRandomNumbers(count, max) {
   }
   return randoms;
 }
+
+function calcPointBack(price, point_back_ratio) {
+  // ポイントバックの計算
+  let _point_back_ratio = point_back_ratio;
+  if (!point_back_ratio) {
+    // かならず10%ポイントバック
+    _point_back_ratio = 10;
+  }
+  return Math.floor(price * (_point_back_ratio / 100));
+}

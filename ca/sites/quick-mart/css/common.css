@@ -100,6 +100,13 @@ a:hover {
   font-size: var(--font-size-40);
 }
 
+.point {
+  color: var(--color-red);
+  /* font-weight: bold; */
+  /* font-size: var(--font-size-40); */
+  text-align: right;
+}
+
 .yen {
   font-size: 0.5em;
 }
@@ -225,7 +232,7 @@ a:hover {
   text-align: right;
   font-size: var(--font-size-30);
   font-weight: bold;
-  color: red;
+  color: var(--color-red);
 }
 
 .product-item figure:hover .name {

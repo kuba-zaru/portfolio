@@ -76,18 +76,63 @@ function readJsonSynchronize(fileName) {
 
 /**
  * ポイントバックを出力する
- * TODO: ポイントの数値に応じてアイキャッチの色を変更したい
  */
 function generateEyeCatchPointBack(point_back_ratio) {
   if (!point_back_ratio) {
     return "";
   }
+  // アイキャッチをcssで作成する場合
+  // let result = `
+  //         <div class="eye-catch-point-back" >
+  //           <p class="point">${point_back_ratio}%</p>
+  //           <p class="">ポイント<br>バック</p>
+  //         </div>
+  //       `;
   let result = `
-          <div class="eye-catch-point-back" >
-            <p class="point">${point_back_ratio}%</p>
-            <p class="">ポイント<br>バック</p>
-          </div>
-        `;
+    <div class="eyecatch-wrap">
+      <span class="eyecatch-img ${
+        point_back_ratio >= 40 ? "eyecatch-jagged-img" : "eyecatch-circle-img"
+      }"></span>
+      <p class="point">${point_back_ratio}<span>%</span></p>
+      <p class="text">ポイント<br>バック</p>
+    </div>
+  `;
+  return result;
+}
+
+/**
+ * ポイントバックSmallを出力する
+ */
+function generateEyeCatchPointBackSmall(point_back_ratio) {
+  if (!point_back_ratio) {
+    return "";
+  }
+  let result = `
+    <div class="eyecatch-wrap eyecatch-small-wrap">
+      <span class="eyecatch-img ${
+        point_back_ratio >= 40 ? "eyecatch-jagged-img" : "eyecatch-circle-img"
+      }"></span>
+      <p class="point">${point_back_ratio}<span>%</span></p>
+    </div>
+  `;
+  return result;
+}
+
+/**
+ * ポイントバックSmall2を出力する
+ */
+function generateEyeCatchPointBackSmall2(point_back_ratio) {
+  if (!point_back_ratio) {
+    return "";
+  }
+  let result = `
+    <div class="eyecatch-wrap eyecatch-small2-wrap">
+      <span class="eyecatch-img ${
+        point_back_ratio >= 40 ? "eyecatch-jagged-img" : "eyecatch-circle-img"
+      }"></span>
+      <p class="point">${point_back_ratio}<span>%</span></p>
+    </div>
+  `;
   return result;
 }
 

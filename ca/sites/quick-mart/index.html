@@ -36,7 +36,7 @@
   <div id="global-wrap">
     <!-- @header -->
     <!-- TODO: headerタグにしたい -->
-    <div id="header">
+    <header id="header">
       <div class="header-top">
         <div class="header-top-inner wrap">
           <h1><a href="#" class="disabled"><img src="img/logo-icon-cart-white.svg" alt="" class="icon"><img
@@ -85,7 +85,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </header>
     <!-- end@header -->
 
     <!-- @hero slider -->
@@ -220,14 +220,14 @@
       const fileName = "data/product_list.json";
       const product_list = readJsonSynchronize(fileName);
 
-      // 人気ランキングを生成する
+      // Pickup! 注目商品欄を生成する
       const product_list_num = 12;
       const _randoms_pl = generateUniqueRandomNumbers(product_list_num, product_list.length);
       const _product_list = [];
       _randoms_pl.forEach(function (element) {
         _product_list.push(product_list[element]);
       });
-      // 人気ランキングを表示する
+      // Pickup! 注目商品欄を表示する
       _product_list.some(function (element, idx) {
         const _output = `
           <div class="product-box box-shadow-1">
@@ -254,15 +254,15 @@
         return (idx >= product_list_num);
       });
 
-      // ランキングリストを生成する
+      // 人気ランキング欄を生成する
       const ranking_num = 6;
       const _randoms_rank = generateUniqueRandomNumbers(ranking_num, product_list.length);
       const _ranking_list = [];
-      // ランダムに取得した商品情報をランキングリストに追加
+      // ランダムに取得した商品情報を人気ランキングに追加
       _randoms_rank.forEach(function (element) {
         _ranking_list.push(product_list[element]);
       });
-      // ランキングリストを表示する
+      // 人気ランキング欄を表示する
       _ranking_list.some(function (element, idx) {
         const _output = `
           <div class="product-item">
@@ -280,6 +280,7 @@
                     ${generateStar(element.star)}
                   </p>
                 </figcaption>
+                ${generateEyeCatchPointBackSmall2(element.point_back_ratio)}
               </a>
             </figure>
           </div>

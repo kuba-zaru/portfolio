@@ -191,7 +191,7 @@
 }
 
 #check-list {
-  margin-bottom: var(--font-size-40);
+  margin-bottom: var(--space-100);
 }
 
 #check-list h2 {

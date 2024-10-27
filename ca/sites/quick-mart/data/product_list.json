@@ -225,6 +225,7 @@
     "description": "このLEDアンティークシャンデリアは、シンプルで可愛いデザインが特徴です。スチールクリアガラスを使用し、160ワットの燭台E12バルブに対応しています。高さ13インチ、幅7.5インチ、製品重量6.0 kg、長さ120 cmのチェーンと72 cmのワイヤー仕様です。電球は燭台E12タイプを使用し、1バルブで60ワットの電力を供給します。このシャンデリアは、UL、CUL、CSA定格を満たしており、安全性と品質を保証します。インテリアに華やかさを加えるこのシャンデリアは、リビングルームやダイニングルームに最適です。",
     "thumbnail": "img/product/illumination01.jpg",
     "price": 73957,
+    "point_back_ratio": 40,
     "star": 3,
     "images": [
       "img/product/illumination01.jpg",
@@ -240,7 +241,7 @@
     "thumbnail": "img/product/JapaneseSword01.jpg",
     "price": 62990,
     "point_back_ratio": 50,
-    "star": 3,
+    "star": 4,
     "images": [
       "img/product/JapaneseSword01.jpg",
       "img/product/JapaneseSword02.jpg",
@@ -363,6 +364,7 @@
     "description": "【サイズ】外寸は幅133×奥行き64×高さ約78cm、座面高は44cm（脚15cm含む）です。【重量】約32kg 【耐荷重】約220kg 【素材】張地はベロア、中材はポケットコイル、ウレタンフォーム、シリコンファイバー、ウェービングベルト、Sバネで構成されています。フレームは天然木を使用しています。ベロアの特徴は、高級感あふれる見た目と抜群の保温性です。生地によっては一年中使用でき、パジャマなど肌触りが重視される衣類にも使われることが多いです。厚み20センチのボリューム感ある背もたれは、柔らかいクッション性で優しく包み込まれるような座り心地を提供します。同じ素材のクッションが2個付属しており、枕や腰掛け、肘置きなどさまざまな用途に使用できます。",
     "thumbnail": "img/product/sofa01.jpg",
     "price": 269990,
+    "point_back_ratio": 25,
     "star": 5,
     "images": [
       "img/product/sofa01.jpg",

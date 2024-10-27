@@ -40,6 +40,7 @@
   --space-40: 40px;
   --space-50: 50px;
   --space-80: 80px;
+  --space-100: 100px;
 
   /* ボタン */
   /* --btn-primary: #d9e021; */
@@ -124,18 +125,16 @@ a:hover {
   margin-right: 0.2em;
 }
 
-.eye-catch-point-back {
+/* cssでのアイキャッチ画像の設定 */
+/* .eye-catch-point-back {
   width: 64px;
   height: 64px;
-  /* border: 1px solid #000; */
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  /* background-color: var(--color-red); */
   background-color: var(--color-cyan);
-  /* color: var(--color-red); */
   color: var(--color-white);
 
   position: absolute;
@@ -143,19 +142,112 @@ a:hover {
   right: -8px;
   z-index: 1;
   opacity: 0.9;
-}
+} */
 
-.eye-catch-point-back .point {
+/* .eye-catch-point-back .point {
   color: var(--color-white);
   font-size: 1.2em;
   transform: translateY(0.2em);
-}
+} */
 
-.eye-catch-point-back p:nth-of-type(2) {
+/* .eye-catch-point-back p:nth-of-type(2) {
   font-size: 0.6em;
   line-height: 1.1;
   transform: translateY(0.4em);
+} */
+
+.eyecatch-wrap {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
 }
+
+.eyecatch-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: 0; */
+  opacity: 0.9;
+}
+
+.eyecatch-jagged-img {
+  /* アイキャッチ ギザギザ */
+  /* background-color: rgba(171, 19, 73, 1); */
+  background-color: var(--color-red);
+  mask: url("../img/eyecatch-jagged.svg") no-repeat center center / contain;
+  -webkit-mask: url("../img/eyecatch-jagged.svg") no-repeat center center / contain;
+}
+
+.eyecatch-circle-img {
+  /* アイキャッチ 円 */
+  /* background-color: rgba(0, 156, 209, 1); */
+  background-color: var(--color-cyan);
+  mask: url("../img/eyecatch-circle.svg") no-repeat center center / contain;
+  -webkit-mask: url("../img/eyecatch-circle.svg") no-repeat center center / contain;
+}
+
+.eyecatch-wrap .point {
+  /* background-color: rgba(255, 0, 0, 0.2); */
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  transform: translateY(6px);
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+  /* width: 100%; */
+  /* z-index: 2; */
+}
+
+.eyecatch-wrap .point span {
+  /* 「%」の文字を小さくする */
+  font-size: 0.6em;
+  transform: translateX(1px) translateY(8px);
+}
+
+.eyecatch-wrap .text {
+  /* background-color: rgba(0, 255, 0, 0.2); */
+  color: white;
+  font-size: 0.6em;
+  text-align: center;
+  line-height: 1.1;
+  transform: translateY(4px);
+  /* z-index: 2; */
+}
+
+.eyecatch-small-wrap {
+  width: 48px;
+  height: 48px;
+  top: 4px;
+  right: 4px;
+}
+
+
+.eyecatch-small-wrap .eyecatch-img {
+  opacity: 0.7;
+}
+
+.eyecatch-small-wrap .point {
+  transform: translateY(8px);
+}
+
+.eyecatch-small2-wrap {
+  width: 32px;
+  height: 32px;
+  top: 4px;
+  right: 4px;
+}
+
+.eyecatch-small2-wrap .point {
+  font-size: 0.9em;
+  transform: translateY(4px);
+}
+
 
 .hover-zoom .img-box img {
   transition: 0.5s;
@@ -210,6 +302,7 @@ a:hover {
 
 .product-item a {
   display: block;
+  position: relative;
 }
 
 /* .product-item img {
@@ -306,7 +399,7 @@ a:hover {
   display: block;
   border-radius: 6px;
   height: 2.25em;
-  width: 2.25em;
+  width: 2.4em;
   background-color: var(--btn-primary);
   display: flex;
   justify-content: center;
@@ -448,6 +541,10 @@ a:hover {
 
 .header-bottom-inner>div p:not(:first-child) {
   margin-left: 1em;
+}
+
+.header-bottom-inner .register i {
+  margin-right: 0.2em;
 }
 
 .header-bottom-inner .register:hover {
